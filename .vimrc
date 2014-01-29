@@ -1,19 +1,19 @@
-" Some Linux distributions set filetype in /etc/vimrc.
-" Clear filetype flags before changing runtimepath to force Vim to reload them.
-filetype off
-filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
+" Turn on indent plugin.
+" Setup pathogen for plugin handling.
+execute pathogen#infect()
+
+" Turn on syntax highlighting.
+syntax on
+
+" Setup the indent plugin.
 filetype plugin indent on
 
-set autoindent
-set smartindent
-
+" Setup preferred indent spacing - 2 spaces, expand tabs to spaces.
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set textwidth=80
 
-set t_Co=256
-syntax on
-
+" Add line numbering.
 set number
+
