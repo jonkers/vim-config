@@ -1,3 +1,7 @@
+" Add vim-config directory to runtime path.
+" N.B. assumes that .vimrc is symlinked from its default location.
+set runtimepath=~/vim-config/.vim,$VIMRUNTIME
+
 " Turn on indent plugin.
 " Setup pathogen for plugin handling.
 execute pathogen#infect()
@@ -16,4 +20,7 @@ set textwidth=80
 
 " Add line numbering.
 set number
+
+" Add colour column marker
+set colorcolumn=80
 
