@@ -7,7 +7,7 @@ set runtimepath=~/vim-config/.vim,$VIMRUNTIME
 execute pathogen#infect()
 
 " Turn on syntax highlighting.
-syntax on
+syntax enable
 
 " Setup the indent plugin.
 filetype plugin indent on
@@ -23,4 +23,8 @@ set number
 
 " Add colour column marker
 set colorcolumn=80
+
+" Setup 'solarized' colour scheme
+set background=dark
+colorscheme solarized
 
