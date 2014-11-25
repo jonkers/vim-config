@@ -34,3 +34,9 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
+" Setup UltiSnips commands
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsSnippetsDir="~/vim-config/.vim/UltiSnips"
