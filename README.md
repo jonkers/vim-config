@@ -3,12 +3,13 @@ vim-config
 
 Configuration files for vim text editor.
 
-Last updated: 9 November 2014.
+Last updated: 25 November 2014.
 
 Uses the following, external git plugins:
 * vim-pathogen
 * vim-sensible
 * vim-colors-solarized
+* Ultisnips
 
 Known issues
 ------------
