@@ -6,6 +6,9 @@ set runtimepath=~/vim-config/.vim,$VIMRUNTIME
 " Setup pathogen for plugin handling.
 execute pathogen#infect()
 
+" Ensure help tags are update for vim documentation.
+Helptags
+
 " Turn on syntax highlighting.
 syntax enable
 
