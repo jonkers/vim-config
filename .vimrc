@@ -13,8 +13,8 @@ syntax enable
 filetype plugin indent on
 
 " Setup preferred indent spacing - 2 spaces, expand tabs to spaces.
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set textwidth=80
 
