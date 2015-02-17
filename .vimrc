@@ -1,19 +1,28 @@
-" Add vim-config directory to runtime path.
-" N.B. assumes that .vimrc is symlinked from its default location.
-set runtimepath=~/vim-config/.vim,$VIMRUNTIME
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" Turn on indent plugin.
-" Setup pathogen for plugin handling.
-execute pathogen#infect()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/vim-config/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+" call vundle#begin('~/vim-config/.vim/bundle/Vundle.vim')
 
-" Ensure help tags are update for vim documentation.
-Helptags
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-sensible'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'SirVer/ultisnips'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " Turn on syntax highlighting.
 syntax enable
-
-" Setup the indent plugin.
-filetype plugin indent on
 
 " Setup preferred indent spacing - 4 spaces, expand tabs to spaces.
 set tabstop=4
@@ -40,3 +49,4 @@ let g:UltiSnipsListSnippets="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetsDir="~/vim-config/.vim/UltiSnips"
+
