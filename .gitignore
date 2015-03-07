@@ -2,3 +2,4 @@
 .vim/bundle/ultisnips
 .vim/bundle/vim-colors-solarized
 .vim/bundle/vim-sensible
+.vim/bundle/vim-flake8
