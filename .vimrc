@@ -16,9 +16,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'SirVer/ultisnips'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'nvie/vim-flake8'
-Plugin 'rust-lang/rust.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -28,17 +26,17 @@ filetype plugin indent on    " required
 syntax enable
 
 " Setup preferred indent spacing - 4 spaces, expand tabs to spaces.
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
-set textwidth=80
+set textwidth=100
 
 " Add line numbering.
 set number
 
 " Add colour column marker
-set colorcolumn=80
+set colorcolumn=100
 
 " Setup 'solarized' colour scheme
 set t_Co=256
