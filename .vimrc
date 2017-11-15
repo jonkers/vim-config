@@ -17,6 +17,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'SirVer/ultisnips'
 Plugin 'nvie/vim-flake8'
+Plugin 'ntpeters/vim-better-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -51,3 +52,5 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetsDir="~/vim-config/.vim/UltiSnips"
 
+" Setup whitespace stripping on save
+autocmd BufEnter * EnableStripWhitespaceOnSave
