@@ -3,3 +3,4 @@
 .vim/bundle/vim-colors-solarized
 .vim/bundle/vim-sensible
 .vim/bundle/vim-flake8
+.vim/bundle/syntastic
